@@ -1,0 +1,590 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* SHARED STYLING STARTS HERE  */
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html{
+    font-family: 'Cabin', sans-serif;
+    font-size: 125%;
+    color: #232323;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #232323;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive, sans-serif;
+    font-size: 6rem;
+    font-weight: lighter;
+}
+
+p{
+    line-height: 29px;
+    font-size: .9rem;
+}    
+
+.wrapper{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.button{
+    background-color: #fdc800;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 10px 30px;
+}
+
+/* HEADER STARTS HERE */
+
+header{
+    background: url(./tasty-assets/asset-1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 75%;
+}
+
+.logo-text{
+    font-family: 'Great Vibes', cursive, sans-serif;
+    font-size: 2.75rem;
+}
+
+nav{
+    display: flex;
+    padding: 20px 0;
+}
+
+nav p{
+    flex: 2 1 auto;
+}
+
+nav ul {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-link a{
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #232323;
+}
+
+.header-container{
+    height: 100%;
+}
+
+.welcome-container{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.welcome-text{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome-text p {
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.social-links a{
+    color: #fdc800;
+}
+
+.social-links ul {
+    position: relative;
+    left: 40px;
+}
+
+.social-links li{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.nav-link .burger-icon {
+    display: none;
+}
+
+/* ABOUT STARTS HERE */
+
+.about{
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 100px 330px;
+}
+
+.about h2{
+    font-family: 'Great Vibes', cursive, sans-serif;
+    font-size: 2rem;
+}
+
+.about p {
+    font-family: 'Cabin', sans-serif;
+    margin: 20px 0;
+    line-height: 1.7;
+    font-size: .9rem;
+}
+
+.about div{
+    margin-top: 40px;
+}
+
+/* FEATURED CONTENT STARTS HERE */
+
+.featured-content{
+    background-color: #232323;
+    padding: 80px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.featured-content > div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.featured-content a {
+    color: #f8f8f8;
+    padding: 20px 80px;
+}
+
+/* GALLERY STARTS HERE */
+
+.gallery{
+    background-color: #f8f8f8;
+}
+
+.gallery-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 30%;
+    padding: 90px 0;
+}
+
+/* BLOGS STARTS HERE */
+
+.blogs{
+    background-color: #eaedf4;
+    text-align: center;
+}
+
+.cooking-tips{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.popular-recipes {
+    display: flex;
+}
+
+.image-container,
+.text-container{
+    width: 50%;
+}
+
+.blogs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.text-container p {
+    padding: 30px 100px;
+}
+
+.text-container div{
+    margin-top: 20px;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* MEET THE COOK STARTS HERE  */
+
+.cook-styles{
+    display: flex;
+    padding: 70px 0;
+    background-color: #fff;
+    min-height: 400px;
+}
+
+.cook-styles img{
+    height: 250px;
+}
+
+.cook-text{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cook-text h2{
+    font-family: 'Great Vibes', cursive, sans-serif;
+    font-size: 2rem;
+}
+
+/* FOOTER STRARTS HERE */
+
+footer{
+    background-color: #232323;
+    color: #f8f8f8;
+}
+
+.footer-styles{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.footer-link a {
+    color: #f8f8f8;
+}
+
+.footer-link li {
+    line-height: 1.7;
+    font-size: .7rem;
+}
+
+.contact,
+.pages,
+.recent-posts {
+    flex-grow: 1;
+}
+
+.address-style {
+    width: 40%;
+}
+
+.stay-updated{
+    flex-grow: 2;
+}
+
+.footer-subscribe li {
+    width: 100%;
+}
+
+.footer-subscribe div{
+    position: relative;
+    margin: 7px 0;
+}
+
+
+.email-input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    text-indent: 15px;
+    font-size: .7rem;
+    position: relative;
+}
+
+.sub-button{
+    display: block;
+    border: none;
+    background-color: #fdc800;
+    font-size: .7rem;
+    text-transform: uppercase;
+    padding: 0 20px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.copyright{
+    background-color: #000;
+    color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.copyright p {
+    opacity: .5;
+}
+
+/* MEDIA QUERIES START HERE */
+
+/* GENERAL ADJUSTMENTS */
+@media screen and (max-width: 1080px){
+    p, 
+    .about p{
+        font-size: .7rem;
+
+    }
+    .about {
+        padding: 30px 100px;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 840px){
+
+    /* HEADER */
+    header{
+    background-position: center;
+    height: 50vh;
+    }
+    .logo-text{
+        font-size: 2rem;
+    }
+    .welcome-text h1{
+        font-size: 5rem;
+    }
+    .nav-link .burger-icon {
+        display: block;
+    }
+    .nav-link li:nth-child(-n+4){
+        display: none;
+    }
+    .social-links{
+        display: none;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 70px 50px;
+      }
+
+    /* FEATURES */
+    .featured-content{
+        padding: 50px 0;
+    }
+    .featured-content > div {
+        flex-direction: column;
+    }
+
+    .featured-content p {
+        font-size: 1.5rem;
+    }
+
+    .featured-content a{
+        padding: 30px 0;
+    }
+
+    /* GALLERY */
+    .gallery-container {
+        width: 100%;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .gallery img {
+        max-width: 50%;
+        padding:0;
+    }
+
+      /* BLOGS */
+    .cooking-tips,
+    .popular-recipes{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-container{
+        width: 70%;
+    }
+    .text-container p {
+        padding: 20px 0;
+    }
+    .image-container {
+        width: 100%;
+    }
+
+    /* MEET THE COOK */
+    .cook-styles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cook-styles img {
+        height: 200px;
+        width: 200px;  
+    }
+    .cook-text {
+        padding: 0;
+    }
+
+    .cook-text p {
+        padding: 20px;
+    }
+    .cook-text h2,
+    .cook-text div{
+        text-align: center;
+        padding: 20px;
+    }
+    
+    /* FOOTER */
+    footer{
+        text-align: center;
+    }
+
+    .footer-styles {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+    }
+
+    .footer-styles h3 {
+        margin: 10px 0;
+    }
+
+    .address-style {
+        width: 100%;
+    }
+    
+    .footer-subscribe li {
+       padding-bottom: 5px;
+    }
+
+    .recent-posts{
+        display: none;
+    }
+
+    .recent-posts,
+    .stay-updated{
+       order: 2;
+    }
+
+    .contact{
+       order: 1;
+    }
+
+    .email-input,
+    .sub-button {
+        margin-bottom: 10px;
+        padding: 30px;  
+    }
+
+    .sub-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email-input{
+        text-align: center;
+    }
+
+    .sub-button {
+        position: static;
+        width: 100%;
+    }
+
+    .contact-method{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-method li {
+        padding: 0 5px;
+    }
+
+   .pages ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pages ul li {
+        padding: 0 10px;
+        text-transform: uppercase;
+    }
+
+    .pages ul li:not(:last-child){
+        border-right: 1px solid #f8f8f8;
+    }
+  
+}
+

@@ -295,10 +295,13 @@ h3{
 
 /* MEET THE COOK STARTS HERE  */
 
+.meet-cook{
+    background-color: #f8f8f8;
+}
+
 .cook-styles{
     display: flex;
     padding: 70px 0;
-    background-color: #f8f8f8;
     min-height: 400px;
 }
 
@@ -485,6 +488,7 @@ footer{
     }
 
     /* MEET THE COOK */
+
     .cook-styles {
         display: flex;
         flex-direction: column;

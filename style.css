@@ -347,15 +347,19 @@ footer{
 .pages,
 .recent-posts {
     flex-grow: 1;
-}
-
-.address-style {
-    width: 40%;
+    width: 10%;
 }
 
 .stay-updated{
     flex-grow: 2;
 }
+
+.address-style {
+    width: 40%;
+    
+}
+
+
 
 .footer-subscribe li {
     width: 100%;

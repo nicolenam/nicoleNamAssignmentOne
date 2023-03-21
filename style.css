@@ -529,10 +529,13 @@ footer{
         margin: 10px 0;
     }
 
-    .address-style {
+    .address-style,
+    .contact,
+    .pages,
+    .recent-posts {
         width: 100%;
     }
-    
+ 
     .footer-subscribe li {
        padding-bottom: 5px;
     }

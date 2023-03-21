@@ -68,7 +68,6 @@ html{
     font-size: 125%;
     color: #232323;
     width: 100%;
-    max-width: 1440px;
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -172,8 +171,8 @@ nav ul {
 }
 
 .social-links ul {
-    position: relative;
-    left: 40px;
+    /* position: relative;
+    left: 400px; */
 }
 
 .social-links li{

@@ -384,7 +384,7 @@ footer{
     display: block;
     border: none;
     background-color: #fdc800;
-    font-size: .7rem;
+    font-size: .6rem;
     text-transform: uppercase;
     padding: 0 20px;
     height: 30px;
@@ -423,8 +423,8 @@ footer{
 
     /* HEADER */
     header{
-    background-position: center;
-    height: 50vh;
+        background-position: center;
+        height: 50vh;
     }
     .logo-text{
         font-size: 2rem;
@@ -445,7 +445,7 @@ footer{
     /* ABOUT */
     .about {
         padding: 70px 50px;
-      }
+    }
 
     /* FEATURES */
     .featured-content{
@@ -537,7 +537,7 @@ footer{
     }
  
     .footer-subscribe li {
-       padding-bottom: 5px;
+        padding-bottom: 5px;
     }
 
     .recent-posts{

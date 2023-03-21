@@ -173,8 +173,6 @@ nav ul {
 .social-links ul {
     /* position: relative;
     left: 400px; */
-    background-color: #f8f8f8cc;
-    border-radius: 20px;
 }
 
 .social-links li{
@@ -597,3 +595,9 @@ footer{
   
 }
 
+@media screen and (min-width: 1900px){
+    .social-links ul{
+        background-color: #f8f8f8cc;
+        border-radius: 20px;
+    }
+}

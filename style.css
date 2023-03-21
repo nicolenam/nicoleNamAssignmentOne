@@ -563,15 +563,12 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: static;
+        width: 100%;
     }
 
     .email-input{
         text-align: center;
-    }
-
-    .sub-button {
-        position: static;
-        width: 100%;
     }
 
     .contact-method{

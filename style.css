@@ -173,6 +173,8 @@ nav ul {
 .social-links ul {
     /* position: relative;
     left: 400px; */
+    background-color: #f8f8f8cc;
+    border-radius: 20px;
 }
 
 .social-links li{
